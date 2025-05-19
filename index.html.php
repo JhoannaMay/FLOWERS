@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href=" css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/lightbox.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .thumbnail img {
+            width: 500px%;
+            height: 150px;
+            
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">Photo Gallery</div>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="flowers.php">Flowers</a></li>
+                <li><a href="others.php">Others</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="slider" class="carousel slide" data-ride="carousel">
+
+            <!-- Static Carousel-Style Indicators -->
+            <div class="text-center" style="margin-top: 30px;">
+            <ol class="carousel-indicators" style="position: static; margin: 0 auto;">
+            <li class="active" style="background-color: #fff;"></li>
+            <li style="background-color: #F49BAB;"></li>
+            <li style="background-color: #F49BAB;"></li>
+            <li style="background-color: #F49BAB;"></li>
+            <li style="background-color: #F49BAB;"></li>
+        </ol>
+</div>
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="image1.jpg" alt="Image 1" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="image2.jpg" alt="Image 2" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="image3.jpg" alt="Image 3" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="image4.jpg" alt="Image 4" class="img-responsive">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#slider" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#slider" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+</div>
+    </div>
+
+    <div class="page header"/>
+        <h3>Photo Gallery</h3>
+
+</div> 
+  <style>
+    .fixed-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
+
+<div class="row">
+    <!-- Flower 1 -->
+    <div class="col-md-4">
+        <a href="#m1" data-toggle="modal" class="thumbnail">
+            <img src="image6.jpg" alt="Image 6" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 1</div>
+                    <div class="modal-body">
+                        <img src="image6.jpg" alt="Image 6" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="modal-footer">Flower 1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flower 2 -->
+    <div class="col-md-4">
+        <a href="#m2" data-toggle="modal" class="thumbnail">
+            <img src="image7.jpg" alt="Image 7" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 2</div>
+                    <div class="modal-body">
+                        <img src="image7.jpg" alt="Image 7" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="modal-footer">Flower 2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flower 3 -->
+    <div class="col-md-4">
+        <a href="#m3" data-toggle="modal" class="thumbnail">
+            <img src="image8.jpg" alt="Image 8" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 3</div>
+                    <div class="modal-body">
+                        <img src="image8.jpg" alt="Image 8" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="modal-footer">Flower 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flower 4 -->
+    <div class="col-md-4">
+        <a href="#m4" data-toggle="modal" class="thumbnail">
+            <img src="image9.jpg" alt="Image 9" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 4</div>
+                    <div class="modal-body">
+                        <img src="image9.jpg" alt="Image 9" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="modal-footer">Flower 4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flower 5 -->
+    <div class="col-md-4">
+        <a href="#m5" data-toggle="modal" class="thumbnail">
+            <img src="image1.jpg" alt="Image 1" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m5">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 5</div>
+                    <div class="modal-body">
+                        <img src="image1.jpg" alt="Image 1" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="modal-footer">Flower 5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flower 6 -->
+    <div class="col-md-4">
+        <a href="#m6" data-toggle="modal" class="thumbnail">
+            <img src="image2.jpg" alt="Image 2" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m6">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 6</div>
+                    <div class="modal-body">
+                        <img src="image2.jpg" alt="Image 2" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="modal-footer">Flower 6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flower 7 -->
+    <div class="col-md-4">
+        <a href="#m7" data-toggle="modal" class="thumbnail">
+            <img src="image3.jpg" alt="Image 3" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m7">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 7</div>
+                    <div class="modal-body">
+                        <img src="image3.jpg" alt="Image 3" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="modal-footer">Flower 7</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flower 8 -->
+    <div class="col-md-4">
+        <a href="#m8" data-toggle="modal" class="thumbnail">
+            <img src="image4.jpg" alt="Image 4" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m8">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 8</div>
+                    <div class="modal-body">
+                        <img src="image4.jpg" alt="Image 4" class="img-responsive img-thumbnail">
+                    </div>
+                    <div class="modal-footer">Flower 8</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Flower 9 -->
+    <div class="col-md-4">
+        <a href="#m9" data-toggle="modal" class="thumbnail">
+            <img src="image5.jpg" alt="Image 5" class="img-responsive fixed-img">
+        </a>
+        <div class="modal fade" id="m9">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">Flower 9</div>
+                    <div class="modal-body">
+                        <img src="image5.jpg" alt="Image 5" class="img-responsive img-thumbnail">   
+                        </div>
+                    <div class="modal-footer">Flower 9</div>
+</div>
+            </div>
+        </div>
+    </div>      
+</div>
+
+
+
+                
+</div>
+<footer class="navbar navbar-default navbar-fixed-bottom"> 
+    <div class="container">
+        <p class="text-center" style="padding: 10px;">Created by Jhoanna</p>
+    </div>
+</footer> 
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
